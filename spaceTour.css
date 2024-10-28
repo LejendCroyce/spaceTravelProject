@@ -38,6 +38,9 @@ textarea,
 select {
   font: inherit;
 }
+li {
+  list-style: none;
+}
 
 /* utility classes */
 .hero-section {
@@ -89,62 +92,92 @@ select {
 }
 /* fonts */
 .text1 {
-  font-family: Bellefair Regular;
-  font-size: 171.9%;
+  font-family: "Bellefair", serif;
+  font-size: 144px;
   line-height: normal;
   letter-spacing: 0px;
 }
 .text2 {
-  font-family: Bellefair Regular;
-  font-size: 114.6%;
+  font-family: "Bellefair", serif;
+  font-size: 100px;
   line-height: normal;
   letter-spacing: 0px;
 }
 .text3 {
-  font-family: Bellefair Regular;
-  font-size: 64.2%;
+  font-family: "Bellefair", serif;
+  font-size: 56px;
   line-height: normal;
   letter-spacing: 0px;
 }
 .text4 {
-  font-family: Bellefair Regular;
-  font-size: 36.7%;
+  font-family: "Bellefair", serif;
+  font-size: 32px;
   line-height: normal;
   letter-spacing: 0px;
 }
 .text5 {
-  font-family: Barlow Condensed Regular;
-  font-size: 36.7%;
+  font-family: "Barlow", sans-serif;
+  font-size: 26px;
   line-height: normal;
   letter-spacing: 4px;
 }
 .text6 {
-  font-family: Bellefair Regular;
-  font-size: 32.1%;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
   line-height: normal;
   letter-spacing: 0px;
 }
 .text7 {
-  font-family: Barlow Condensed Regular;
-  font-size: 16.8%;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
   line-height: normal;
   letter-spacing: 2px;
 }
 .text8 {
-  font-family: Barlow Condensed Regular;
-  font-size: 19.2%;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
   line-height: normal;
   letter-spacing: 2px;
 }
 .text9 {
-  font-family: Barlow Condensed Regular;
-  font-size: 19.2%;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
   line-height: normal;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
 }
 /* home page */
 .home-page {
   background-image: url(images/homepage-image-desktop);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+}
+.space-purpose {
+  height: 20pc;
+}
+.content-div {
+  --gap: 5%;
+  height: 50%;
+}
+.text-div {
+  width: 50%;
+}
+.button-div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.button-div button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-style: none;
+}
+.nav-div {
+  --gap: 55%;
+  padding: 20px;
+}
+.nav-bar {
+  --gap: 10px;
 }
