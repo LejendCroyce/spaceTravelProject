@@ -1,0 +1,7 @@
+@media screen and (max-width: 900px) {
+  .home-page {
+    background: url(images/homepage-image-tablet);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

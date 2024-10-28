@@ -6,6 +6,16 @@
   margin: 0;
   padding: 0;
 }
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 /* define height and width  */
 body {
   line-height: 1.5;
@@ -57,4 +67,84 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+/* color and background-color  */
+.white-background {
+  background-color: rgb(255, 255, 255);
+}
+.black-background {
+  background-color: rgb(11, 13, 23);
+}
+.blue-background {
+  background-color: rgb(208, 214, 249);
+}
+.white-font {
+  color: rgb(255, 255, 255);
+}
+.black-font {
+  color: rgb(11, 13, 23);
+}
+.blue-font {
+  color: rgb(208, 214, 249);
+}
+/* fonts */
+.text1 {
+  font-family: Bellefair Regular;
+  font-size: 171.9%;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+.text2 {
+  font-family: Bellefair Regular;
+  font-size: 114.6%;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+.text3 {
+  font-family: Bellefair Regular;
+  font-size: 64.2%;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+.text4 {
+  font-family: Bellefair Regular;
+  font-size: 36.7%;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+.text5 {
+  font-family: Barlow Condensed Regular;
+  font-size: 36.7%;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+.text6 {
+  font-family: Bellefair Regular;
+  font-size: 32.1%;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+.text7 {
+  font-family: Barlow Condensed Regular;
+  font-size: 16.8%;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.text8 {
+  font-family: Barlow Condensed Regular;
+  font-size: 19.2%;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.text9 {
+  font-family: Barlow Condensed Regular;
+  font-size: 19.2%;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+/* home page */
+.home-page {
+  background-image: url(images/homepage-image-desktop);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

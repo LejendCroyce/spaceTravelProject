@@ -1,0 +1,7 @@
+@media screen and (max-width: 650px) {
+  .home-page {
+    background: url(images/home-page-image-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
