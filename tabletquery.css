@@ -1,7 +1,39 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1035px) {
   .home-page {
-    background: url(images/homepage-image-tablet);
+    background: url(images/homepage-image-tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .nav-bar {
+    width: 80%;
+  }
+  .logo-div {
+    width: 10%;
+  }
+  .nav-div {
+    --gap: 5%;
+  }
+  .line {
+    display: none;
+  }
+
+  .space-purpose {
+    height: 5pc;
+  }
+  .text-div {
+    width: 100%;
+  }
+  .text-div p {
+    text-align: center;
+    width: 100%;
+  }
+  .content-div {
+    flex-direction: column;
+    justify-content: center;
+    --gap: 25px;
+    align-items: center;
+  }
+  .button-div {
+    justify-content: center;
   }
 }

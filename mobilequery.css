@@ -1,7 +1,43 @@
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 570px) {
   .home-page {
-    background: url(images/home-page-image-mobile);
+    background: url(images/homepage-image-tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .logo-div {
+    width: 50%;
+  }
+  .hero-section {
+    width: 95%;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .space-purpose {
+    height: 2.5pc;
+  }
+  .text1 {
+    font-size: 100px;
+  }
+  .text2 {
+    font-size: 75px;
+  }
+  .text3 {
+    font-size: 40px;
+  }
+  .text4 {
+    font-size: 20px;
+  }
+  .text5 {
+    font-size: 18px;
+  }
+  .text6 {
+    font-size: 54px;
+  }
+  .text3 {
+    font-size: 50px;
+  }
+  .button-div {
+    width: 100%;
   }
 }
