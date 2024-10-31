@@ -38,8 +38,10 @@ textarea,
 select {
   font: inherit;
 }
-li {
+li,
+li a {
   list-style: none;
+  text-decoration: none;
 }
 
 /* utility classes */
@@ -47,6 +49,9 @@ li {
   width: 90%;
   margin-inline: auto;
   padding-inline: 2em;
+}
+.section {
+  height: 100vh;
 }
 .hide {
   display: none;
@@ -146,11 +151,11 @@ li {
   letter-spacing: 0px;
 }
 /* home page */
+
 .home-page {
   background-image: url(images/homepage-image-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 .space-purpose {
   height: 15pc;
