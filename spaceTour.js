@@ -44,6 +44,7 @@ function getImage(Isrc, alt) {
   const image = document.createElement("img");
   image.src = Isrc;
   image.alt = alt;
+
   return image;
 }
 addDestination(
@@ -80,9 +81,74 @@ addDestination(
 );
 function createDestinationPage(place) {
   const page = document.createElement("div");
+  const heading = document.createElement("div");
+  const content = document.createElement("div");
   page.classList.add("hero-section");
   page.classList.add("destination-content");
+  content.classList.add("content-div", "flex");
+  heading.classList.add("heading");
+  heading.textContent = `01 PICK YOUR DESTINATION`;
+  page.append(heading, content);
+  const imageContainer = document.createElement("div");
+  const textContainer = document.createElement("div");
+  imageContainer.classList.add("image-div");
+  textContainer.classList.add("text-div");
+  content.append(imageContainer, textContainer);
+  imageContainer.append(place.destinationImage);
+  const destinationNavbar = document.createElement("ul");
+  destinationNavbar.classList.add("flex");
+  let count = 0;
+  while (count <= 3) {
+    const navList = document.createElement("li");
+    destinationNavbar.append(navList);
+    count += 1;
+  }
+  function nav(a, b, c, d) {
+    destinationNavbar.children;
+    destinationNavbar.children[0].textContent = a;
+    destinationNavbar.children[1].textContent = b;
+    destinationNavbar.children[2].textContent = c;
+    destinationNavbar.children[3].textContent = d;
+    console.log(destinationNavbar.children);
+    return destinationNavbar.children;
+  }
+  nav(
+    destination[0].destinationName,
+    destination[1].destinationName,
+    destination[2].destinationName,
+    destination[3].destinationName
+  );
 
+  console.log(destinationNavbar);
+  const name = document.createElement("p");
+  const profile = document.createElement("p");
+  const travelDetails = document.createElement("div");
+  const timeDiv = document.createElement("div");
+  const distanceDiv = document.createElement("div");
+  const timeHeading = document.createElement("p");
+  const distanceHeading = document.createElement("p");
+  const traveltime = document.createElement("p");
+  const travelDistance = document.createElement("p");
+  timeHeading.textContent = "EST. TRAVEL TIME";
+  distanceHeading.textContent = "AVG. DISTANCE";
+  traveltime.textContent = place.destinationTime;
+  travelDistance.textContent = place.destinationDistance;
+
+  timeDiv.classList.add("time-div");
+  timeDiv.append(timeHeading, traveltime);
+  distanceDiv.append(distanceHeading, travelDistance);
+  distanceDiv.classList.add("distance-div");
+
+  travelDetails.classList.add("flex");
+  travelDetails.append(distanceDiv, timeDiv);
+  profile.classList.add("text9");
+  profile.textContent = place.destinationText;
+  name.classList.add("text1");
+  name.textContent = place.destinationName;
+  textContainer.append(destinationNavbar, name, profile, travelDetails);
   console.log(page);
+  contentContainer.replaceWith(page);
+  section.classList.remove("home-page");
+  section.classList.add("destination");
 }
-createDestinationPage();
+createDestinationPage(destination[3]);
