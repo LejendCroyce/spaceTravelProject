@@ -42,6 +42,10 @@ li,
 li a {
   list-style: none;
   text-decoration: none;
+  outline: none;
+  height: 100%;
+  text-align: justify;
+  padding-top: 2%;
 }
 
 /* utility classes */
@@ -248,4 +252,7 @@ li a {
 }
 .p {
   margin-bottom: 15px;
+}
+.selector {
+  border-bottom: 2px white solid;
 }
