@@ -1,11 +1,12 @@
-@media screen and (max-width: 1035px) {
+@media screen and (max-width: 1020px) {
   .home-page {
     background: url(images/homepage-image-tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
   .nav-bar {
-    width: 80%;
+    width: 85%;
+    justify-content: space-evenly;
   }
   .logo-div {
     width: 10%;
@@ -35,5 +36,11 @@
   }
   .button-div {
     justify-content: center;
+  }
+  .destination-navbar {
+    justify-content: center;
+  }
+  .travel-details {
+    justify-content: space-evenly;
   }
 }

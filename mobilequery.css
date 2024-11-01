@@ -1,4 +1,4 @@
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
   .home-page {
     background: url(images/homepage-image-tablet.png);
     background-repeat: no-repeat;
@@ -43,5 +43,13 @@
   }
   .button-div {
     width: 100%;
+  }
+  .travel-details {
+    flex-direction: column;
+    --gap: 10%;
+  }
+  .heading {
+    height: 2pc;
+    text-align: center;
   }
 }

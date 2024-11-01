@@ -1,8 +1,9 @@
 const navDiv = document.querySelector(".nav-div");
 const contentContainer = document.querySelector(".home-page-content");
 const section = document.querySelector(".home-page");
+// console.log(section, contentContainer);
 
-console.log(contentContainer);
+// console.log(contentContainer);
 let webStore = [];
 let destination = [];
 let technology = [];
@@ -86,7 +87,7 @@ function createDestinationPage(place) {
   page.classList.add("hero-section");
   page.classList.add("destination-content");
   content.classList.add("content-div", "flex");
-  heading.classList.add("heading");
+  heading.classList.add("heading", "white-font");
   heading.textContent = `01 PICK YOUR DESTINATION`;
   page.append(heading, content);
   const imageContainer = document.createElement("div");
@@ -96,12 +97,14 @@ function createDestinationPage(place) {
   content.append(imageContainer, textContainer);
   imageContainer.append(place.destinationImage);
   const destinationNavbar = document.createElement("ul");
-  destinationNavbar.classList.add("flex");
+  destinationNavbar.classList.add("destination-navbar", "flex");
   let count = 0;
   while (count <= 3) {
     const navList = document.createElement("li");
+    navList.classList.add("white-font");
     destinationNavbar.append(navList);
     count += 1;
+    console.log(navList);
   }
   function nav(a, b, c, d) {
     destinationNavbar.children;
@@ -130,25 +133,29 @@ function createDestinationPage(place) {
   const traveltime = document.createElement("p");
   const travelDistance = document.createElement("p");
   timeHeading.textContent = "EST. TRAVEL TIME";
+  timeHeading.classList.add("white-font");
   distanceHeading.textContent = "AVG. DISTANCE";
+  distanceHeading.classList.add("white-font");
   traveltime.textContent = place.destinationTime;
+  traveltime.classList.add("white-font");
   travelDistance.textContent = place.destinationDistance;
+  travelDistance.classList.add("white-font");
 
   timeDiv.classList.add("time-div");
   timeDiv.append(timeHeading, traveltime);
   distanceDiv.append(distanceHeading, travelDistance);
   distanceDiv.classList.add("distance-div");
 
-  travelDetails.classList.add("flex");
+  travelDetails.classList.add("travel-details", "flex");
   travelDetails.append(distanceDiv, timeDiv);
-  profile.classList.add("text9");
+  profile.classList.add("p", "white-font", "text9");
   profile.textContent = place.destinationText;
-  name.classList.add("text1");
+  name.classList.add("text1", "white-font");
   name.textContent = place.destinationName;
   textContainer.append(destinationNavbar, name, profile, travelDetails);
-  console.log(page);
+  console.log(page, section, contentContainer);
   contentContainer.replaceWith(page);
   section.classList.remove("home-page");
   section.classList.add("destination");
 }
-createDestinationPage(destination[3]);
+createDestinationPage(destination[0]);
