@@ -80,6 +80,15 @@ addDestination(
   "1.6 BIL. KM",
   "7 YEARS"
 );
+function createElement(jsName,attr,className,id){
+  const jsName= document.createElement(attr);
+  jsName.classList.add(className);
+  jsName.setAttribute('data-ids', id);
+}
+function appendElement(parent,child){
+  parent.append(child)
+}
+createElement(page,"div",("destination-content","hero-section"))
 function createDestinationPage(place) {
   const page = document.createElement("div");
   const heading = document.createElement("div");
