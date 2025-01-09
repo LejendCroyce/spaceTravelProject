@@ -23,6 +23,7 @@
   }
   .text-div {
     width: 100%;
+    align-items: center;
   }
   .text-div p {
     text-align: center;
@@ -42,5 +43,41 @@
   }
   .travel-details {
     justify-content: space-evenly;
+  }
+  .image-div img {
+    max-width: 200px;
+    height: auto;
+    justify-self: center;
+  }
+
+  .destination {
+    background: url(images/destination-background.png);
+    background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: max-content;
+  }
+  .crew {
+    background: url(images/crew-background1.png);
+    background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: max-content;
+  }
+  .technology .content-div {
+    flex-direction: column-reverse;
+  }
+  .technology .text-div {
+    flex-direction: column;
+  }
+  .tech-navbar {
+    flex-direction: row;
+  }
+  .technology .image-div {
+    justify-content: center;
+  }
+  .image-div .tech-image {
+    height: 200px;
+    width: auto;
   }
 }

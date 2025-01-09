@@ -8,13 +8,17 @@
     width: 50%;
   }
   .hero-section {
-    width: 95%;
+    width: 100%;
   }
   .nav-bar {
     display: none;
   }
-  .nav-div svg {
+
+  .nav-div .mobile-nav-svg {
     display: block;
+    color: white;
+  }
+  .return-btn {
     color: white;
   }
   .space-purpose {
@@ -36,9 +40,9 @@
     font-size: 18px;
   }
   .text6 {
-    font-size: 54px;
+    font-size: 44px;
   }
-  .text3 {
+  .text7 {
     font-size: 50px;
   }
   .button-div {
@@ -51,5 +55,35 @@
   .heading {
     height: 2pc;
     text-align: center;
+  }
+  .mobile-nav {
+    display: flex;
+    gap: 10%;
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    text-align: left;
+    margin-left: 10%;
+    background-color: rgba(11, 13, 23, 0.712);
+    backface-visibility: hidden;
+    justify-content: space-between;
+    padding-top: 10%;
+  }
+  .mobile-nav div {
+    width: 90%;
+    --gap: 10px;
+    flex-direction: column;
+  }
+  .mobile-nav li,
+  .mobile-nav a {
+    height: 5%;
+  }
+  li:hover {
+    border-left: 2px rgba(255, 255, 255, 0.541) solid;
+    border-bottom: 0;
+  }
+  .selector {
+    border-left: 2px white solid;
+    border-bottom: 0;
   }
 }

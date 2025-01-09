@@ -39,13 +39,17 @@ select {
   font: inherit;
 }
 li,
-li a {
+li a,
+a {
   list-style: none;
   text-decoration: none;
   outline: none;
   height: 100%;
   text-align: justify;
   padding-top: 2%;
+}
+li:hover {
+  border-bottom: 2px rgba(255, 255, 255, 0.541) solid;
 }
 
 /* utility classes */
@@ -59,6 +63,7 @@ li a {
 .section {
   min-height: 100vh;
   width: 100%;
+  padding-bottom: 20px;
 }
 .hide {
   display: none;
@@ -165,17 +170,20 @@ li a {
   background-size: cover;
 }
 .space-purpose {
-  height: 15pc;
+  height: 14pc;
 }
 .content-div {
-  --gap: 10%;
-  height: 50%;
+  --gap: 5%;
+  min-height: 50%;
+  padding-bottom: 20px;
 }
 .text-div {
-  width: 50%;
+  width: 60%;
+  min-height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 20px;
 }
 .button-div {
   width: 50%;
@@ -195,9 +203,7 @@ li a {
   padding-top: 30px;
   justify-content: space-between;
 }
-.nav-div svg {
-  display: none;
-}
+
 .nav-bar {
   --gap: 20px;
   background-color: rgba(255, 255, 255, 0.26);
@@ -230,23 +236,46 @@ li a {
   background-size: cover;
   background-size: cover;
 }
+.crew {
+  background: url(images/crew-background1.png);
+  background-size: cover;
+  background-size: cover;
+  padding-bottom: 20px;
+}
 .image-div {
   max-width: 50%;
+  max-height: 100%;
 }
 .image-div img {
-  max-width: 100%;
-  height: auto;
+  max-width: 400px;
+  height: 400px;
 }
 .heading {
   width: 100%;
-  height: 5pc;
+  height: 6pc;
 }
-.destination-navbar {
+.destination-navbar,
+.crew-navbar {
   --gap: 15px;
+}
+
+.crew-navbar button {
+  background-color: rgba(255, 255, 255, 0.247);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+.crew-navbar button:hover {
+  background: rgba(255, 255, 255, 0.555);
+}
+.crew-navbar .crew-selector {
+  background-color: white;
 }
 .travel-details {
   width: 100%;
-  --gap: 30%;
+  --gap: 20%;
   padding-top: 15px;
   border-top: 1px white solid;
 }
@@ -255,4 +284,68 @@ li a {
 }
 .selector {
   border-bottom: 2px white solid;
+}
+
+.gradient {
+  background: linear-gradient(center, rgba(0, 0, 0, 0.589));
+}
+.crew-content {
+  display: grid;
+  justify-content: space-around;
+  gap: 15%;
+}
+.tech-content .text-div {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.tech-content .content-div {
+  justify-content: space-between;
+}
+.text-content-div p {
+  padding-bottom: 1pc;
+}
+.image-div .tech-image {
+  width: auto;
+  height: 400px;
+}
+.technology {
+  text-align: start;
+  background-image: url(images/tech-background.png);
+  padding-bottom: 10px;
+}
+.tech-content {
+  width: 100%;
+  padding-right: 0%;
+  padding-left: 10%;
+}
+.tech-content .image-div {
+  width: 50%;
+  justify-content: right;
+}
+.tech-navbar {
+  flex-direction: column;
+  --gap: 2pc;
+}
+.tech-navbar button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: white 1px solid;
+  border-radius: 50%;
+}
+.tech-navbar .tech-selector {
+  color: rgb(11, 13, 23);
+  background-color: rgba(255, 255, 255, 1);
+}
+.tech-navbar button:hover {
+  background-color: rgba(255, 255, 255, 0.555);
+}
+.crew .image-div img {
+  height: 100%;
+  max-height: 400px;
+  width: auto;
+}
+.button-div button:hover {
+  text-shadow: 30px rgba(255, 255, 255, 0.658);
 }
